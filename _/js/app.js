@@ -23,6 +23,16 @@ app.Module = (function () {
 	};
 	var method = {
 		boot: function () {
+
+			$('#nav').find('a').click(function(e){
+				var destination = $(this).attr('href').substring(1);
+				var localOffset = $('#' + destination).offset();
+				$('body').stop().animate({scrollTop: localOffset.top - $('#top').outerHeight()}, 1000, function(){
+					app.Dev.log('we should be there...');
+				});
+				e.preventDefault();
+			});
+
 			method.helloWorld();
 			method.getLocation();
 		},
