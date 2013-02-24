@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family:'garage';
+    src: url('../font/garage.eot');
+    src: url('../font/garage.eot?#iefix') format('embedded-opentype'), url('../font/garage.woff') format('woff'), url('../font/garage.ttf') format('truetype'), url('../font/garage.svg#garage') format('svg');
+    font-weight:normal;font-style:normal;
+}
+
+@font-face {
+    font-family:'gotham-light';
+    src: url('../font/gotham-light.eot');
+    src: url('../font/gotham-light.eot?#iefix') format('embedded-opentype'), url('../font/gotham-light.woff') format('woff'), url('../font/gotham-light.ttf') format('truetype'), url('../font/gotham-light.svg#gotham-light') format('svg');
+    font-weight:normal;font-style:normal;
+}
+
+@font-face {
+    font-family:'gotham-bold';
+    src: url('../font/gotham-bold.eot');
+    src: url('../font/gotham-bold.eot?#iefix') format('embedded-opentype'), url('../font/gotham-bold.woff') format('woff'), url('../font/gotham-bold.ttf') format('truetype'), url('../font/gotham-bold.svg#gotham-bold') format('svg');
+    font-weight:normal;font-style:normal;
+}
+
+body {
+	color:#6b463e;
+	font-family:'gotham-light';
+	font-size:116%;
+}
+
+h1 {
+	font-family:'garage';
+	text-transform:uppercase;
+	color:#e0c242;
+	font-size:4.8em;
+	font-weight:normal;
+	letter-spacing:4px;
+	text-align:center;
+	line-height:0.8em;
+	margin:0;padding:0;
+}
+
+h2 {
+	font-family:'gotham-bold';
+	text-transform:uppercase;
+	font-size:0.65em;
+	font-weight:normal;
+	letter-spacing:4px;
+	color:#232020;
+	text-align:center;
+	margin:0;padding:0;
+}
+
+.nav {
+	list-style:none;
+	margin:0;padding:0;
+}
+
+.nav li {
+	list-style:none;
+	padding:0;
+	float:left;
+	margin:0 1.0em;
+}
+
+.nav a {
+	color:#232020;
+	text-decoration:none;
+	text-transform:lowercase;
+	font-size:2.0em;
+	font-family:'garage';
+}
+
+.nav a:hover {
+	color:#000;
+}
+
+strong {
+	color:#232020;
+}
+
+.blob {
+	clear:left;
+}
+
+.primary {
+	font-size:2.1em;
+}
