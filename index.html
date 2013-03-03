@@ -50,27 +50,27 @@
 
 	<h3>Get to know your wedding party girls.</h3>
 
-	<p>
+	<p class="tonka">
 	<strong>Crystal</strong>
 	Golden california girl. Always up for a glam dress-up. Most contagious laugh you will ever hear. <br>
 	</p>
 
-	<p>
+	<p class="heidi">
 	<strong>Heidi</strong>
 	A beauty genius, media know all, says what she means with her sweet caring disposition.<br>
 	</p>
 
-	<p>
+	<p class="athena">
 	<strong>Athena</strong>
 	Listener extraordinaire, always up for a party, and will never forget an important date.<br>
 	</p>
 
-	<p>
+	<p class="juju">
 	<strong>Julie</strong>
 	Natural born adventurer and beyond thoughtful. Vibrance charm wins hearts.<br>
 	</p>
 
-	<p>
+	<p class="tara">
 	<strong>Tara</strong>
 	Sweet as pie, strong as nails, when you are around she’s present, most likeable human on earth.<br>
 	</p>
@@ -147,32 +147,32 @@
 
 	<h3>Get to know your wedding party boys.</h3>
 
-	<p>
+	<p class="henry">
 	<strong>Henry</strong>
 	Artistic visionary. Loves everybody. Svelt debater.
 	</p>
 
-	<p>
+	<p class="erik">
 	<strong>Erik</strong>
 	Expert wit. Actively tries new things. Grounded.
 	</p>
 
-	<p>
+	<p class="dan">
 	<strong>Dan</strong>
 	Renaissance man. Loving husband. Adorable father.
 	</p>
 
-	<p>
+	<p class="tony">
 	<strong>Tony</strong>
 	Ping pong master. Cares about people. Kindest person ever.
 	</p>
 
-	<p>
+	<p class="jason">
 	<strong>Jason</strong>
 	Usability advocate. Dedicated pappa. Heartfelt laugher.
 	</p>
 
-	<p>
+	<p class="mp">
 	<strong>Michael</strong>
 	Life guru. World Traveler. Genius.
 	</p>
@@ -305,12 +305,28 @@
 
 	<h3>Please do let us know if you're coming.</h3>
 
-	<form>
-		<input type="text" placeholder="Your Name" />
-		<input type="text" placeholder="Your favorite cocktail?" />
-		<textarea placeholder="Anything else you want to say?"></textarea>
-		<button>Commit to having fun!</button>
+	<form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
+		<input type="hidden" name="recipient" value="rsvp@desertwedding.us">
+		<input type="hidden" name="subject" value="Another RSVP!">
+		<input type="hidden" name="redirect" value="http://desertwedding.us/thanks">
+		<input type="text" name="name" placeholder="Your Name" />
+		<input type="text" name="survey" placeholder="Your favorite cocktail?" />
+		<textarea name="comments" placeholder="Anything else you want to say?"></textarea>
+		<button id="rsvp-button" type="submit">Commit to having fun!</button>
+		<!-- <input type="submit" value="send"> -->
 	</form>
+
+<!--
+<form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
+<input type="hidden" name="recipient" value="email address">
+<input type="hidden" name="subject" value="Your Subject line goes here">
+Full Name: <input type="text" name="name" size="60" style="width: 300px"><br />
+Email: <input type="text" name="email" size="60" style="width: 300px"><br />
+phone: <input type="text" name="name" size="60" style="width: 300px"><br />
+Comments: <textarea name="Comments" rows="8" wrap="wrap" style="width: 300px"></textarea><br />
+<input type="submit" value="Send">
+</form>
+-->
 
 </div></div>
 
@@ -326,10 +342,50 @@
 
 	<h3>This is not my beautiful chair.</h3>
 
-	<p class="primary">
-	<strong>Registry Content</strong><br>
-	here<br>
+	<p class="primary" style="width:100%;">
+	<strong>We have plenty of things.</strong><br>
+	So we don't have a things registry. However, if you'd like to contribute to the family fund, you're more than welcome.
 	</p>
+
+	<hr>
+
+	<div class="thingie">
+
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<p class="newsie">
+	<strong>$50</strong><br>
+	A trip to the movies!<br>
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="R8VVKFW5VQUJ8">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</p>
+	</form>
+
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<p class="newsie">
+	<strong>$100</strong><br>
+	Dinner for the family!<br>
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="VVGRJMX3NHTZ6">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</p>
+	</form>
+
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<p class="newsie">
+	<strong>$???</strong><br>
+	You choose the amount.<br>
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="VJNTBKPPPD8UG">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</p>
+	</form>
+
+	</div>
+
 
 </div></div>
 

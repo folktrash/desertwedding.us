@@ -34,6 +34,18 @@ app.Module = (function () {
 			});
 
 /*
+			$('#rsvp-button').click(function () {
+
+				$.post('http://formmail.dreamhost.com/cgi-bin/formmail.cgi', function(data) {
+					app.Dev.log('response data: ' + data);
+				});
+				return false;
+
+
+			});
+*/
+
+/*
 			$('#nav').find('a').each(function (i) {
 				property.links.push($(this).prop('href'));
 			});

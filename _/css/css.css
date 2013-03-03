@@ -210,7 +210,34 @@ iframe {
 	margin:2.0em 0;
 	color:#000;
 	color:rgba(35,32,32,0.9);
+	background-repeat:no-repeat;
+	min-height:100px;
 }
+
+#girls p:nth-child(even) {
+	padding-left:120px;
+	background-position:0 50%;
+}
+
+#girls p:nth-child(odd) {
+	padding-right:120px;
+	background-position:100% 50%;
+}
+
+
+.tonka  {background-image:url(../img/profile/tonka.jpg);}
+.heidi  {background-image:url(../img/profile/heidi.jpg);}
+.athena {background-image:url(../img/profile/athena.jpg);}
+.juju   {background-image:url(../img/profile/juju.jpg);}
+.tara   {background-image:url(../img/profile/tara.jpg);}
+
+.henry  {background-image:url(../img/profile/henry.jpg);}
+.erik   {background-image:url(http://www.fillmurray.com/100/100/);}
+.dan    {background-image:url(../img/profile/dan.jpg);}
+.tony   {background-image:url(../img/profile/tony.jpg);}
+.jason  {background-image:url(../img/profile/jason.jpg);}
+.mp     {background-image:url(../img/profile/mp.jpg);}
+
 
 #accomodations a {
 	color:#232020;
@@ -233,7 +260,22 @@ iframe {
 #boys p {
 	font-size:2.0em;
 	margin:2.0em 0;
+	background-repeat:no-repeat;
+	min-height: 100px;
 }
+
+#boys p:nth-child(even) {
+	padding-left:120px;
+	background-position:0 50%;
+}
+
+#boys p:nth-child(odd) {
+	padding-right:120px;
+	background-position:100% 50%;
+}
+
+
+
 
 #activities {
 
@@ -267,19 +309,19 @@ iframe {
 
 #rsvp form {
 	width:80%;
-	margin:2.0em auto;
+	margin:0;
 }
 #rsvp input, #rsvp textarea, #rsvp button {
 	display: block;
 	width: 80%;
 	padding: 1.0em;
-	font-size: 2.0em;
+	font-size: 1.0em;
 	margin:1.0em 0;
 	font-family:'gotham-light'
 }
 
 #rsvp textarea {height:10em;}
-#rsvp button {width:90%;}
+#rsvp button {width:85%;}
 
 
 .blob {
