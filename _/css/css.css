@@ -1,4 +1,3 @@
-
 @font-face {
     font-family:'garage';
     src: url('../font/garage.eot');
@@ -29,29 +28,34 @@ body {
 	padding-top:13em;
 }
 
+
+
+
+
+
+
 .header {
 	position:fixed;top:0;
-	padding:2.0em;
-
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(80%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	width:100%;
+	background-color:#fff;
+	padding-bottom:2.0em;
 }
 
 h1 {
 	font-family:'garage';
 	text-transform:uppercase;
 	color:#e0c242;
+	color:rgba(224,194,66,0.85);
 	font-size:4.8em;
 	font-weight:normal;
 	letter-spacing:4px;
 	text-align:center;
 	line-height:0.8em;
 	margin:0;padding:0;
+	padding-top:1.5em;
+	background-image:url(../img/top.png);
+	background-repeat:no-repeat;
+	background-position:50% 0;
 }
 
 h2 {
@@ -64,28 +68,44 @@ h2 {
 	text-align:center;
 	margin:0;padding:0;
 	margin-bottom:3.0em;
+	margin-top:0.6em;
+}
+
+h3 {
+	font-family:'garage';
+	text-transform:uppercase;
+	font-size:4em;
+	font-weight:normal;
+	color:#e45c51;
+	margin:0;
 }
 
 .nav {
-	list-style:none;
-	padding:0;
-	overflow:auto;
-	display:table-row;
+	display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    list-style:none;
+    padding:0;margin:0 auto;
+    width:88%;
+    font-size:1.45em;
+    letter-spacing:1px;
+    text-transform:lowercase;
+    font-family:'garage';
 }
 
-.nav li {
-	list-style:none;
-	padding:0;
-	display:table-cell;
-	width:20%;
+.nav li {padding:0;margin:0;}
+
+.nav li:nth-child(even) {
+	-ms-box-flex:1;
+	-moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
 }
 
 .nav a {
-	color:#232020;
+	color:#231f20;
+	color:rgba(35,31,32,0.95);
 	text-decoration:none;
-	text-transform:lowercase;
-	font-size:2.0em;
-	font-family:'garage';
 }
 
 .nav a:hover {
@@ -103,3 +123,106 @@ strong {
 .primary {
 	font-size:2.1em;
 }
+
+#ceremony {margin-top:5.0em;}
+#ceremony .primary {
+	background-image:url(../img/casa.jpg);
+	background-repeat:no-repeat;
+	padding-top:9.0em;
+	margin-top:0;
+}
+
+#ceremony-map {
+	border:1px solid #e0c242;
+	float:right;
+}
+
+#girls p {
+	font-size:2.0em;
+	margin:2.0em 0;
+}
+
+#accomodations p a {
+	color:#232020;
+	text-decoration:none;
+}
+
+#accomodations p a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+#boys p {
+	font-size:2.0em;
+	margin:2.0em 0;
+}
+
+#nate6 p {
+	font-size:3em;
+	margin:2.0em 0.5em;
+}
+
+#soundtrack-player {
+	margin:4em 17em;
+}
+
+#quote {
+	background-color:#e0c242;
+}
+
+#quote p {
+	line-height:2.0em;
+	margin:8.0em 1.0em;
+	font-size:2.3em;
+
+}
+
+#rsvp form {
+	width:80%;
+	margin:2.0em auto;
+}
+#rsvp input, #rsvp textarea, #rsvp button {
+	display: block;
+	width: 80%;
+	padding: 1.0em;
+	font-size: 2.0em;
+	margin:1.0em 0;
+	font-family:'gotham-light'
+}
+
+#rsvp textarea {height:10em;}
+#rsvp button {width:90%;}
+
+
+.blob {
+	padding:2.0em 0;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+
+
+	/* body    {width:80%;max-width:960px;min-width:913px;margin:0 auto;}
+	.header {width:80%;max-width:935px;min-width:935px;} */
+
+	.column {width:80%;max-width:935px;min-width:935px;margin:0 auto;}
+
+}
+
+@media only screen and (max-width: 500px) {/*i know, so lazy, we had to build the desktop before the mobile version. I KNOW.*/
+
+
+
+}
+
+
+
+
+
+
+
+
