@@ -28,6 +28,12 @@ body {
 	padding-top:13em;
 }
 
+#map-mobile {
+	display:none;
+}
+
+select {display:none;}
+
 
 
 
@@ -114,6 +120,7 @@ h3 {
 
 strong {
 	color:#232020;
+
 }
 
 .blob {
@@ -121,35 +128,106 @@ strong {
 }
 
 .primary {
-	font-size:2.1em;
+	font-size:1.5em;
+	width:45%;
+	float:left;
 }
 
-#ceremony {margin-top:5.0em;}
+h3 + .primary {
+	margin-right:10%;
+}
+
+hr {
+	clear:both;
+}
+
+.newsie {
+	width:32%;
+	float:left;
+	font-size:0.9em;
+	word-spacing:-1px;
+}
+
+.thingie p:nth-child(3n+2) {
+	padding:0 2%;
+}
+
+#ceremony {margin-top:3.0em;}
 #ceremony .primary {
-	background-image:url(../img/casa.jpg);
+	background-image:url(../img/casa-wide2.jpg);
 	background-repeat:no-repeat;
-	padding-top:9.0em;
+	padding-top:11em;
 	margin-top:0;
+	width:auto;float:none;margin:0;
+	background-size:100%;
+
+
+	padding-left:0.4em;padding-bottom:0.2em;
+	border:1px solid #6b463e;
 }
 
-#ceremony-map {
-	border:1px solid #e0c242;
-	float:right;
+#ceremony .primary a {color:#fff;text-decoration:none;
+text-shadow:
+		3px 3px 3px rgba(35,32,32,0.1),
+		-3px 3px 3px rgba(35,32,32,0.1),
+		3px -3px 3px rgba(35,32,32,0.1),
+		-3px -3px 3px rgba(35,32,32,0.1),
+		1px 1px 2px rgba(35,32,32,0.8),
+		-1px 1px 2px rgba(35,32,32,0.8),
+		1px -1px 2px rgba(35,32,32,0.8),
+		-1px -1px 2px rgba(35,32,32,0.8),
+		1px 1px 1px rgba(35,32,32,1.0),
+		-1px 1px 1px rgba(35,32,32,1.0),
+		1px -1px 1px rgba(35,32,32,1.0),
+		-1px -1px 1px rgba(35,32,32,1.0);}
+#ceremony .primary a:hover {color:#00f;
+text-shadow:
+		3px 3px 3px rgba(255,255,255,0.1),
+		-3px 3px 3px rgba(255,255,255,0.1),
+		3px -3px 3px rgba(255,255,255,0.1),
+		-3px -3px 3px rgba(255,255,255,0.1),
+		1px 1px 2px rgba(255,255,255,0.8),
+		-1px 1px 2px rgba(255,255,255,0.8),
+		1px -1px 2px rgba(255,255,255,0.8),
+		-1px -1px 2px rgba(255,255,255,0.8),
+		1px 1px 1px rgba(255,255,255,1.0),
+		-1px 1px 1px rgba(255,255,255,1.0),
+		1px -1px 1px rgba(255,255,255,1.0),
+		-1px -1px 1px rgba(255,255,255,1.0);}
+
+iframe {
+	border: 1px solid #6b463e;
 }
+
+#girls {
+	background-color:#e45c51;
+}
+
+#girls h3 {color:#fff;}
 
 #girls p {
 	font-size:2.0em;
 	margin:2.0em 0;
-}
-
-#accomodations p a {
-	color:#232020;
-	text-decoration:none;
-}
-
-#accomodations p a:hover {
 	color:#000;
-	text-decoration:underline;
+	color:rgba(35,32,32,0.9);
+}
+
+#accomodations a {
+	color:#232020;
+}
+
+#accomodations a:hover {
+	color:#000;
+}
+
+#boys {
+	background-color:#6b463e;
+	color:#fff;
+}
+
+#boys h3 {
+	color:#000;
+	color:rgba(35,32,32,0.9);
 }
 
 #boys p {
@@ -157,13 +235,23 @@ strong {
 	margin:2.0em 0;
 }
 
+#activities {
+
+}
+
+#activities a {
+	color:#232020;
+}
+
+#activities a:hover {color:#00f;}
+
 #nate6 p {
 	font-size:3em;
 	margin:2.0em 0.5em;
 }
 
 #soundtrack-player {
-	margin:4em 17em;
+	margin:1em;
 }
 
 #quote {
@@ -172,9 +260,9 @@ strong {
 
 #quote p {
 	line-height:2.0em;
-	margin:8.0em 1.0em;
+	margin:2.0em auto;
 	font-size:2.3em;
-
+	width:auto;
 }
 
 #rsvp form {
@@ -209,11 +297,146 @@ strong {
 	/* body    {width:80%;max-width:960px;min-width:913px;margin:0 auto;}
 	.header {width:80%;max-width:935px;min-width:935px;} */
 
-	.column {width:80%;max-width:935px;min-width:935px;margin:0 auto;}
+	.column {width:80%;max-width:935px;min-width:935px;margin:0 auto;overflow:auto;}
 
 }
 
 @media only screen and (max-width: 500px) {/*i know, so lazy, we had to build the desktop before the mobile version. I KNOW.*/
+
+	body {
+		padding-top:0.0em;
+	}
+
+	.column {
+		padding:0 0.5em;
+	}
+
+
+	h1 {
+		font-size:4.0em;
+		background-image:none;
+		padding-top:1.2em;
+	}
+
+	.header {
+		background-image:url(../img/top.png);
+		background-repeat:no-repeat;
+		background-position:50% -30%;
+		position:relative;
+		padding-bottom:0;
+	}
+
+	h2 {
+		margin-bottom:0;
+	}
+
+	.nav {
+		font-size:1.0em;
+	}
+
+	h3 {
+		font-size:1.8em;
+		letter-spacing:-1px;
+	}
+
+	.primary {
+		font-size:1.1em;
+		float:none;
+		width:auto;
+	}
+
+	.newsie {
+		float:none;width:auto;
+		font-size:0.85em;
+	}
+
+	.thingie p:nth-child(3n+2) {
+		padding:0;
+	}
+
+	#ceremony {
+		margin-top:0em;
+	}
+
+	#ceremony .primary {
+		padding-top:5.5em;
+		border:0;
+		font-size:1.28em;
+	}
+	#ceremony .primary a {
+		color:#00f;
+		text-shadow:none;
+		text-decoration:underline;
+	}
+
+
+	#girls p {
+		font-size:1.0em;
+		margin:1.0em 0;
+	}
+
+
+	#boys p {
+		font-size:1.0em;
+		margin:1.0em 0;
+	}
+
+
+	#soundtrack-player {
+		margin:0em;
+	}
+
+
+	#nate6 p {
+		font-size:2em;
+		margin:1.0em 0;
+	}
+
+	#quote p {
+		line-height:2.0em;
+		margin:1.0em 0;
+		font-size:1.0em;
+		letter-spacing:-1px;
+	}
+
+	#quote strong {
+		display:block;
+	}
+
+
+	#rsvp form {
+		width:100%;
+		margin:1.0em auto;
+	}
+	#rsvp input, #rsvp textarea, #rsvp button {
+		display: block;
+		width: 80%;
+		padding: 1.0em;
+		font-size:1.0em;
+		margin:1.0em 0;
+	}
+
+	#rsvp textarea {height:10em;}
+	#rsvp button {width:93%;}
+
+	#nav {display:none;}
+
+
+	select {
+		width:80%;
+		margin:0 auto;
+		display:block;
+	}
+
+	#map-desktop {
+		display:none;
+	}
+	#map-mobile {
+		display:block;
+	}
+	small {display:none;}
+
+
 
 
 
