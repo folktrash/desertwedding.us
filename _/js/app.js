@@ -33,6 +33,12 @@ app.Module = (function () {
 				e.preventDefault();
 			});
 
+			$('h1').click(function () {
+				$('body').stop().animate({scrollTop: 0}, 1000, function(){
+					app.Dev.log('we should be there...');
+				});
+			});
+
 /*
 			$('#rsvp-button').click(function () {
 
