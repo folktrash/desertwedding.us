@@ -27,74 +27,18 @@ app.Module = (function () {
 			$('#nav').find('a').click(function(e){
 				var destination = $(this).attr('href').substring(1);
 				var localOffset = $('#' + destination).offset();
-				$('body').stop().animate({scrollTop: localOffset.top - $('#top').outerHeight() + 1}, 1000, function(){
+				$('body, html').stop().animate({scrollTop: localOffset.top - $('#top').outerHeight() + 1}, 1000, function(){
 					app.Dev.log('we should be there...');
 				});
 				e.preventDefault();
 			});
 
 			$('h1').click(function () {
-				$('body').stop().animate({scrollTop: 0}, 1000, function(){
+				$('body, html').stop().animate({scrollTop: 0}, 1000, function(){
 					app.Dev.log('we should be there...');
 				});
 			});
 
-/*
-			$('#rsvp-button').click(function () {
-
-				$.post('http://formmail.dreamhost.com/cgi-bin/formmail.cgi', function(data) {
-					app.Dev.log('response data: ' + data);
-				});
-				return false;
-
-
-			});
-*/
-
-/*
-			$('#nav').find('a').each(function (i) {
-				property.links.push($(this).prop('href'));
-			});
-
-			app.Dev.log(property.links);
-
-			var length = property.links.length;
-			var newNav = '<select id="newNav"><option selected>explore...</option>';
-			var i;
-
-			for (i = 0; i < length; i++) {
-				newNav += '<option value="' + property.links[i] + '">';
-				newNav += property.links[i].slice(property.links[i].indexOf('#') + 1,property.links[i].length);
-				newNav += '</option>';
-			}
-
-			newNav += '</select>';
-
-			app.Dev.log(newNav);
-
-			$('#top').find('.column').append(newNav);
-
-
-
-			$('#newNav').change(function (j,k) {
-
-				$(this).find(':selected').each(function () {
-
-					var destination = $(this).text();
-					var localOffset = $('#' + destination).offset();
-					$('body').stop().animate({scrollTop: localOffset.top - $('#top').outerHeight() + 1}, 1000, function(){
-						app.Dev.log('we should be there...');
-					});
-
-				});
-
-			});
-			*/
-
-
-
-			//if mobile
-			//$('#ceremony-map').remove();
 
 			//method.helloWorld();
 			//method.getLocation();
