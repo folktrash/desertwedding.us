@@ -383,9 +383,10 @@ iframe {
 	}
 
 	#ceremony .primary {
-		padding-top:5.5em;
+		padding-top:9em;
 		border:0;
 		font-size:1.28em;
+		padding-left:0;
 	}
 	#ceremony .primary a {
 		color:#00f;
@@ -412,8 +413,7 @@ iframe {
 
 
 	#nate6 p {
-		font-size:2em;
-		margin:1.0em 0;
+
 	}
 
 	#quote p {
@@ -460,6 +460,7 @@ iframe {
 	}
 	small {display:none;}
 
+	#contact p {width:auto;}
 
 
 
