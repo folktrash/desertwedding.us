@@ -473,4 +473,10 @@ iframe {
 
 
 
+#thanks {margin-top:3.0em;}
+.thanks h1 a {
+	color:#e0c242;
+	color:rgba(224,194,66,0.85);
+	text-decoration:none;
+}
 
